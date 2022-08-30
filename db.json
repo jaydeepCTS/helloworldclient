@@ -1,11 +1,3 @@
 {
-  "users": [
-    {
-      "firstName": "Alexa",
-      "lastName": "Siri",
-      "age": 30,
-      "Gender": "male",
-      "id": 1
-    }
-  ]
+  "users": []
 }

@@ -18,7 +18,8 @@ export class UserFormComponent implements OnInit {
   save(){
     const observable=this.userService.createUser(this.user);
     observable.subscribe((response:any)=>{
-      console.log(response)
+      console.log(response);
+      this.getUsers();
     },(error)=>{
       console.log(error)
     })
@@ -39,6 +40,7 @@ export class UserFormComponent implements OnInit {
     observable.subscribe((response:any)=>{
       console.log(response)
       this.users.splice(index,1);
+      this.getUsers();
     },(error)=>{
       console.log(error)
     })
