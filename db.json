@@ -2,23 +2,10 @@
   "users": [
     {
       "firstName": "Alexa",
-      "lastName": "Mathew",
-      "age": 28,
+      "lastName": "Siri",
+      "age": 30,
+      "Gender": "male",
       "id": 1
-    },
-    {
-      "firstName": "David`",
-      "lastName": "Mathew",
-      "age": 40,
-      "Gender": "male",
-      "id": 2
-    },
-    {
-      "firstName": "Oscar",
-      "lastName": "Mathew",
-      "age": 31,
-      "Gender": "male",
-      "id": 3
     }
   ]
 }

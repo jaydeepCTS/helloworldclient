@@ -34,6 +34,16 @@ export class UserFormComponent implements OnInit {
     })
   }
 
+  deleteUserRow(user:any,index:number){
+    const observable=this.userService.deleteUser(user);
+    observable.subscribe((response:any)=>{
+      console.log(response)
+      this.users.splice(index,1);
+    },(error)=>{
+      console.log(error)
+    })
+  }
+
   constructor(public userService:UserService) { }
 
   ngOnInit(): void {

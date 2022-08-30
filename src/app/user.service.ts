@@ -16,5 +16,9 @@ export class UserService {
     return this.http.get(BASE_URL);
   }
 
+  deleteUser(user:any){
+    return this.http.delete(BASE_URL+"/"+user.id);
+  }
+
   constructor(public http: HttpClient) { }
 }
