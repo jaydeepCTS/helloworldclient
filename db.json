@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "firstName": "Alexa",
+      "lastName": "Mathew",
+      "age": 28,
+      "id": 1
+    },
+    {
+      "firstName": "David`",
+      "lastName": "Mathew",
+      "age": 40,
+      "Gender": "male",
+      "id": 2
+    },
+    {
+      "firstName": "Oscar",
+      "lastName": "Mathew",
+      "age": 31,
+      "Gender": "male",
+      "id": 3
+    }
+  ]
+}

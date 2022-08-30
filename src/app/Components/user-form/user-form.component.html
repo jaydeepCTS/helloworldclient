@@ -1,0 +1,47 @@
+<h3><i>Fill all the details below</i></h3>
+<br>
+<div class="row">
+    <div class="col">
+        <input type="text" class="form-control" [(ngModel)]=user.firstName placeholder="First name"
+            aria-label="First name">
+    </div>
+    <div class="col">
+        <input type="text" class="form-control" [(ngModel)]=user.lastName placeholder="Last name"
+            aria-label="Last name">
+    </div>
+    <div class="col">
+        <input type="number" class="form-control" [(ngModel)]=user.age placeholder="Enter Age" aria-label="Age">
+    </div>
+</div>
+<div class="form-check">
+    <input class="form-check-input" [(ngModel)]=user.Gender value="male" type="radio" name="gender" id="male" checked>
+    <label class="form-check-label" for="male">
+        Male
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" [(ngModel)]=user.Gender value="female" type="radio" name="gender" id="female" >
+    <label class="form-check-label" for="female">
+        Female
+    </label>
+</div>
+<br>
+<br>
+<button type="button" class="btn btn-success" (click)="save()">Save</button>
+
+<br>
+<br>
+
+<ol class="list-group list-group-numbered">
+    <li class="list-group-item" *ngFor="let u of users">
+        <span>{{u.firstName}}</span>
+        <br>
+        <span>{{u.lastName}}</span>
+        <br>
+        <span>{{u.age}}</span>
+        <br>
+        <span>{{u.Gender}}</span>
+        <br>
+        <button type="button"style="margin-right:500" class="btn btn-danger">Delete</button>
+    </li>
+  </ol>
