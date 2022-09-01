@@ -7,6 +7,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import {UserFormComponent} from './Components/user-form/user-form.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { HomeComponent } from './Components/home/home.component';
+import { PipeDemoComponent } from './Components/pipe-demo/pipe-demo.component';
 
 
 
@@ -15,7 +17,9 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
     AppComponent,
     NavbarComponent,
     UserFormComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    HomeComponent,
+    PipeDemoComponent
   ],
   imports: [
     BrowserModule,
